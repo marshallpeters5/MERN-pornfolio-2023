@@ -16,11 +16,13 @@ $(document).ready(function () {
     $('#checkbox').change(function () {
         // If the checkbox is checked
         if ($(this).is(':checked')) {
-            // Add the 'dark-mode' class to the body element
+            // Add the 'dark-mode' class to the body and footer elements
+            $('footer').addClass('dark-mode');
             $('body').addClass('dark-mode');
         } else {
-            // Remove the 'dark-mode' class from the body element
+            // Remove the 'dark-mode' class from the body and footer elements
             $('body').removeClass('dark-mode');
+            $('footer').removeClass('dark-mode');
         }
     });
 });

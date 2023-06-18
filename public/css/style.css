@@ -139,9 +139,14 @@
 footer {
     width: 100vw;
     height: 40px;
+    transition: 0.4s;
 }
 .footer-item {
     margin: 20px;
+}
+
+footer.dark-mode {
+    background-color: #323232;
 }
 
 #contact-me {
