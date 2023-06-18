@@ -138,6 +138,10 @@
 
 footer {
     width: 100vw;
+    height: 40px;
+}
+.footer-item {
+    margin: 20px;
 }
 
 #contact-me {
