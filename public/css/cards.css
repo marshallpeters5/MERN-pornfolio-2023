@@ -32,6 +32,10 @@ body {
 
 }
 
+.option-dark {
+   color: #343a40;
+}
+
 .option {
    position: relative;
    overflow: hidden;
