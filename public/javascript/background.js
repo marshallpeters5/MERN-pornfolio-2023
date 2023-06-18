@@ -10,19 +10,28 @@ checkbox.addEventListener("click", () => {
     mainBody.classList.toggle("darkBg");
 });
 
-// When the document is ready
 $(document).ready(function () {
-    // Add a change event listener to the checkbox using jQuery
     $('#checkbox').change(function () {
-        // If the checkbox is checked
         if ($(this).is(':checked')) {
-            // Add the 'dark-mode' class to the body and footer elements
             $('footer').addClass('dark-mode');
             $('body').addClass('dark-mode');
+
+            // Change SVG file names to their white versions
+            $('.footer-item img').each(function () {
+                var src = $(this).attr('src');
+                var newSrc = src.replace('.svg', '-white.svg');
+                $(this).attr('src', newSrc);
+            });
         } else {
-            // Remove the 'dark-mode' class from the body and footer elements
             $('body').removeClass('dark-mode');
             $('footer').removeClass('dark-mode');
+
+            // Change SVG file names back to their original versions
+            $('.footer-item img').each(function () {
+                var src = $(this).attr('src');
+                var newSrc = src.replace('-white.svg', '.svg');
+                $(this).attr('src', newSrc);
+            });
         }
     });
 });
