@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Marshall's Portfolio</title>
+   <!-- CSS Stylesheets -->
+   <link rel="stylesheet" href="./public/css/reset.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="./public/css/cards.css">
+   <link rel="stylesheet" href="./public/css/style.css">
+</head>
+
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark ps-4">
+      <a class="navbar-brand me-auto" href="#">MP</a>
+      <div class="navbar-items ps-4">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#aboutme">About Me</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="ml-auto">
+         <input class="align-right" id="checkbox" type="checkbox" value="off">
+      </div>
+   </nav>
+
+   <div class="mainBody ">
+      <div class="toggleContainer">
+         <!-- Main Content -->
+         <div class="container mt-4">
+            <h1>Welcome to My Portfolio</h1>
+            <section id="about">
+               <p>Below you will find projects that I have either contributed in part or solely to.
+                  Select any project and click on the image to be taken to the deployed application. Enjoy!</p>
+            </section>
+            <!-- FitSync -->
+            <div class="options">
+               <a href="https://immense-wave-18625.herokuapp.com" target="_blank" rel="noopener noreferrer"
+                  class="option active" style="--optionBackground:url(./public/assets/FitSync.jpg);">
+                  <div class="shadow"></div>
+                  <div class="label">
+                     <div class="info">
+                        <div class="main option-dark">FitSync</div>
+                        <div class="sub option-dark">A full-stack web application utilizing the MVC framework for
+                           fitness tracking.</div>
+                     </div>
+                  </div>
+               </a>
+               <!-- Asteria -->
+               <a href="https://marshallpeters5.github.io/asteria-app/" target="_blank" rel="noopener noreferrer"
+                  class="option" style="--optionBackground:url(./public/assets/asteria.jpg);">
+                  <div class="shadow"></div>
+                  <div class="label">
+                     <div class="info">
+                        <div class="main">Asteria</div>
+                        <div class="sub">A front-end application utilizing NASA's Rover API for space geeks.</div>
+                     </div>
+                  </div>
+               </a>
+               <!-- Weather Dashboard -->
+               <a href="https://marshallpeters5.github.io/weather-dashboard/" target="_blank" rel="noopener noreferrer"
+                  class="option"
+                  style="--optionBackground:url(./public/assets/weather-dashboard.jpg);">
+                  <div class="shadow"></div>
+                  <div class="label">
+                     <div class="info">
+                        <div class="main option-dark">Weather Dashboard</div>
+                        <div class="sub option-dark">A simple yet powerful application for tracking local weather
+                           patterns.</div>
+                     </div>
+                  </div>
+               </a>
+               <!-- Note Taker -->
+               <a href="https://stormy-basin-56635.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+                  class="option" style="--optionBackground:url(./public/assets/note-taker.jpg);">
+                  <div class="shadow"></div>
+                  <div class="label">
+                     <div class="info">
+                        <div class="main option-dark">Note Taker</div>
+                        <div class="sub option-dark">A note taking app for organizing your thoughts into persistent
+                           data.</div>
+                     </div>
+                  </div>
+               </a>
+               <!-- Daily Planner -->
+               <a href="https://marshallpeters5.github.io/mod-5-workday-scheduler/" target="_blank"
+                  rel="noopener noreferrer" class="option"
+                  style="--optionBackground:url(./public/assets/daily-planner.jpg);">
+                  <div class="shadow"></div>
+                  <div class="label">
+                     <div class="info">
+                        <div class="main option-dark">Daily Planner</div>
+                        <div class="sub option-dark">A front-end application for people who tend to lose track of time.
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Contact Information -->
+   <footer class="d-flex justify-content-center">
+      <section id="contact">
+      </section>
+   </footer>
+
+   <!-- JavaScript Dependencies -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="./public/javascript/cards.js"></script>
+   <script src="./public/javascript/background.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
