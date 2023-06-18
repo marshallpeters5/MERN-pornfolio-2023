@@ -7,15 +7,7 @@ body {
    height: 100vh;
    font-family: 'Roboto', sans-serif;
    transition: .25s;
-   background: #232223;
-   color: white;
-}
-
-.credit {
-   position: absolute;
-   bottom: 20px;
-   left: 20px;
-   color: inherit;
+   background: #CFCFCF;
 }
 
 .navbar {
