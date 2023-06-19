@@ -46,7 +46,6 @@
     min-width: 6rem;
     min-height: 6rem;
 
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,7 +74,6 @@
     align-items: center;
 }
 
-
 #checkbox:hover {
     box-shadow: 0px 4px 26px 6px rgba(0, 0, 0, 0.25);
 }
@@ -83,10 +81,8 @@
 #checkbox::before {
     content: "";
     position: relative;
-
     width: 2.5rem;
     height: 2.5rem;
-
     background: #CFCFCF;
     border-radius: 100px;
     transition: .3s;
@@ -96,19 +92,13 @@
     content: "";
     position: absolute;
     background: #343a40;
-
     width: 1rem;
     height: 2rem;
-
     margin-right: 1rem;
-
     transform: rotate(0deg);
-
-
     border-top-left-radius: 6.25rem;
     border-bottom-left-radius: 6.25rem;
     border-right: 0;
-
     transition: .4s border-radius;
     animation: checkboxAnimBack .4s;
 }
@@ -119,15 +109,11 @@
 
 #checkbox:checked::after {
     animation: checkboxAnim .4s;
-
     content: "";
     position: absolute;
-
     transform: rotate(-180deg);
-
     width: 1rem;
     height: 2rem;
-
     margin-right: -1rem;
 }
 
@@ -141,12 +127,14 @@ footer {
     height: 40px;
     transition: 0.4s;
 }
+
 .footer-item {
     margin: 20px;
 }
 
 footer.dark-mode {
-    background-color: #323232;
+    background-color: #343a40;
+    color: #CFCFCF;
 }
 
 #contact-me {
@@ -154,9 +142,10 @@ footer.dark-mode {
 }
 
 .darkBg {
-    background: #323232;
+    background: #343a40;
 }
 
 .dark-mode {
     color: #CFCFCF;
+    background-color: #343a40;
 }
