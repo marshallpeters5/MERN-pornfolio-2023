@@ -1,0 +1,12 @@
+{
+  "name": "mern-portfolio-2023",
+  "version": "1.0.0",
+  "description": "An updated 2023 portfolio utilizing full-stack concepts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
