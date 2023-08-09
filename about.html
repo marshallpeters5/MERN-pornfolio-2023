@@ -10,6 +10,10 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="./public/css/cards.css">
    <link rel="stylesheet" href="./public/css/style.css">
+   <link rel="stylesheet" href="./public/css/custom-style.css"> <!-- Add the path to your custom style -->
+   <style>
+      /* Add your custom styles here, if needed */
+   </style>
 </head>
 
 <body>
@@ -23,61 +27,78 @@
          </button>
          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Projects</a>
-                 </li>
-                 <li class="nav-item">
-                    <a class="nav-link active" href="about.html">About Me</a>
-                 </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Contact</a>
-                 </li>                 
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Projects</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link active" href="about.html">About Me</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="resume.html">Resume</a>
+               </li>               
             </ul>
          </div>
       </div>
       <div class="ml-auto">
-         <input class="align-right" id="checkbox" type="checkbox" value="off">
+         <input class="align-right" id="checkbox" type="checkbox" alt="A button toggler for interchanging between light mode and dark mode." value="off">
       </div>
    </nav>
 
+   <!-- Main Content Container -->
    <main class="mainBody">
-      <div class="toggleContainer">
+      <div class="content-container">
          <!-- Main Content -->
-         <div class="container mt-4">
+         <div class="container mt-4" id="content-body">
+            <img class="justify-content-center m-4 p-4" id="me"
+               src="./public/photos/marshheadshot3-min.png" alt="A photo of my gorgeous smiling face!">
             <h1>About Me</h1>
             <section id="about">
-               <p>Hey there, I'm Marshall Peters!
+               <p>Hey there, I'm Marshall Peters!<br/>
                   Welcome to my corner of the web. I'm all about crafting exceptional digital experiences from my cozy hub in Maitland, Florida. A self-proclaimed coding enthusiast, I'm driven by a passion for turning lines of code into captivating user journeys.
                   
-                  The Tech Palette I Paint With
-                  MERN Aficionado: I'm not just another developer; I'm a MERN stack magician. From creating sleek interfaces using HTML, CSS, and libraries like Bootstrap and Materialize/Bulma, to weaving server-side wonders with Node.js, Express, and MongoDB, I'm all in.
-                  
-                  React Virtuoso: If web development were an art gallery, React would be my masterpiece. I wield its power to craft dynamic single-page applications that aren't just visually appealing, but also fluidly functional.
-                  
-                  API Adventurer: Navigating the world of RESTful APIs is like embarking on a thrilling quest. I've got the map, the compass, and the skills to integrate external services seamlessly into my projects.
-                  
-                  Tooltime Guru: My toolkit is stacked with awesomeness. GraphQL, SQL, NoSQL, jQuery – I've got them all covered. And my trusty sidekicks include Webpack, VS Code, and GitHub.
-                  
-                  Skills That Make Me, Me
-                  Problem-Solving Maestro: Give me a puzzle, and I'll show you a solution that's equal parts logic and imagination. Complex challenges are my playground for innovation.
-                  
-                  Time Wizard: Time isn't just a constraint; it's a canvas. I masterfully paint my tasks with precision, ensuring every stroke is on time, every project is a masterpiece.
-                  
-                  Pixel Perfect Observer: Ever heard of pixel whispering? That's my secret technique. I sweat the small stuff, so every design element dances in harmony, creating a symphony of user delight.
-                  
-                  Collaboration Conductor: In the orchestra of development, teamwork is my baton. I conduct harmonious collaborations, where ideas flow freely and innovation knows no bounds.
-                  
-                  Behind the Code Curtain
-                  When I'm not typing away, you'll find me sipping coffee, diving into a new coding challenge, or exploring the outdoors with my trusty laptop. My love for technology is rivaled only by my appreciation for nature's beauty.
+                  <br><br><br><strong> The Tech Palette I Paint With
+                  </strong><br/>
+
+                  <br><strong>MERN Aficionado:</strong> I'm not just another developer; I'm a MERN stack magician. From creating sleek interfaces using HTML, CSS, and libraries like Bootstrap and Materialize/Bulma, to weaving server-side wonders with Node.js, Express, and MongoDB, I'm all in.
+                  <br/>
+
+                  <br><strong>React Virtuoso:</strong> If web development were an art gallery, React would be my masterpiece. I wield its power to craft dynamic single-page applications that aren't just visually appealing, but also fluidly functional.
+                  <br/>
+
+                  <br><strong>API Adventurer:</strong> Navigating the world of RESTful APIs is like embarking on a thrilling quest. I've got the map, the compass, and the skills to integrate external services seamlessly into my projects.
+                  <br/>
+
+                  <br><strong>Tooltime Guru:</strong> My toolkit is stacked with awesomeness. GraphQL, SQL, NoSQL, jQuery – I've got them all covered. And my trusty sidekicks include Webpack, VS Code, and GitHub.
+                  <br/>
+
+                  <br><br><strong>Skills That Make Me, Me<br/></strong>
+
+                  <br><strong>Problem-Solving Maestro:</strong> Give me a puzzle, and I'll show you a solution that's equal parts logic and imagination. Complex challenges are my playground for innovation.
+                  <br/>
+
+                  <br><strong>Time Wizard:</strong> Time isn't just a constraint; it's a canvas. I masterfully paint my tasks with precision, ensuring every stroke is on time, every project is a masterpiece.
+                  <br/>
+
+                  <br><strong>Pixel Perfect Observer:</strong> Ever heard of pixel whispering? That's my secret technique. I sweat the small stuff, so every design element dances in harmony, creating a symphony of user delight.
+                  <br/>
+
+                  <br><strong>Collaboration Conductor:</strong> In the orchestra of development, teamwork is my baton. I conduct harmonious collaborations, where ideas flow freely and innovation knows no bounds.
+                  <br/>
+
+                  <br><br><strong>Behind the Code Curtain</strong><br/><br/>
+
+                  When I'm not typing away, you'll find me sipping coffee, diving into a new coding challenge, or exploring the outdoors with my trusty laptop. I'm an avid rock climber and animal lover. My love for technology is rivaled only by my appreciation for nature's beauty.
                   
                   Whether you're a fellow developer, a potential collaborator, or just someone who stumbled upon this virtual abode, I invite you to explore my portfolio and reach out. Let's connect, brainstorm, and turn ideas into digital realities.
                   
-                  Cheers to coding, creating, and conquering the web together!</p>
+                  Cheers to coding, creating, and conquering the web together!
+               </p>
             </section>
          </div>
       </div>
    </main>
 
+   <!-- Footer -->
    <footer class="d-flex justify-content-center">
       <section id="contact">
          <a href="https://github.com/marshallpeters5" class="footer-item" target="_blank" rel="noopener noreferrer"><img
@@ -88,11 +109,15 @@
                src="./public/assets/mail.svg" alt="A link to my email address."></a>
       </section>
    </footer>
+
    <!-- JavaScript Dependencies -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <script src="./public/javascript/cards.js"></script>
    <script src="./public/javascript/background.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script>
+      // Add any additional JavaScript code here, if needed
+   </script>
 </body>
 
 </html>
